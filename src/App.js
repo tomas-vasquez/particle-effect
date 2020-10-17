@@ -9,7 +9,7 @@ const particleOptions = {
     // Make a particle for this pixel if blue > 50 (range 0-255)
     return pixel.b > 50;
   },
-  color: ({ x, y, image }) => "#ffffff",
+  color: ({ x, y, image }) => "#61dafb",
   radius: () => Math.random() * 1.5 + 0.5,
   mass: () => 40,
   friction: () => 0.15,
@@ -30,9 +30,9 @@ export default function App() {
       src={require("./react-logo.png")}
       width={Number(innerWidth)}
       height={Number(innerHeight)}
-      scale={0.85}
+      scale={1}
       entropy={6}
-      maxParticles={3000}
+      maxParticles={4000}
       particleOptions={particleOptions}
       mouseMoveForce={motionForce}
       touchMoveForce={motionForce}
