@@ -1,3 +1,7 @@
+* {
+  overflow: hidden !important;
+}
+
 .App {
   text-align: center;
 }

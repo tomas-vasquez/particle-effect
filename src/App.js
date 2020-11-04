@@ -26,17 +26,18 @@ export default function App() {
   const { innerWidth, innerHeight } = useWindowSize();
 
   return (
-    <ParticleImage
-      src={require("./react-logo.png")}
-      width={Number(innerWidth)}
-      height={Number(innerHeight)}
-      scale={1}
-      entropy={6}
-      maxParticles={4000}
-      particleOptions={particleOptions}
-      mouseMoveForce={motionForce}
-      touchMoveForce={motionForce}
-      // backgroundColor="hsl(207 90% 54% / 0)"
-    />
+    <div>
+      <ParticleImage
+        src={require("./react-logo.png")}
+        width={window.innerWidth}
+        height={window.innerHeight}
+        scale={1}
+        entropy={6}
+        maxParticles={4000}
+        particleOptions={particleOptions}
+        mouseMoveForce={motionForce}
+        touchMoveForce={motionForce}
+      />
+    </div>
   );
 }
